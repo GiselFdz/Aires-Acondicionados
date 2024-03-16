@@ -1,0 +1,380 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: rgb(199, 230, 237);
+
+h1{ font-size: 2.5em;}
+h2{ font-size: 2em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+header{
+    background-color: rgb(199, 230, 237);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(6, 1, 11);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(79, 68, 136);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/2306.q891.030.S.m004.c10.air\ conditioner\ split\ system\ realistic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: rgb(255, 255, 255);
+    
+}
+
+
+
+#acerca-de .container{
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#nuestros-trabajos{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-trabajos .container{
+    padding: 120px 12px;
+}
+
+#nuestros-trabajos h2{
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+#nuestros-trabajos p{
+    display: none;
+}
+
+#nuestros-trabajos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/11781.jpg);
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/Mantenimiento-de-sistema-de-aire-acondicionado.jpg);
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../media/2207.q803.003.S.m012.c10.broken\ air\ conditioner\ realistic.jpg);
+
+}
+
+#contacto{
+    
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+    
+
+}
+
+
+
+#contacto h2{
+    font-size: 2.5em;
+   
+}
+
+#contacto p{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+   
+    
+}
+
+
+footer{
+    background-color: rgb(199, 230, 237);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(35, 34, 34);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    min-width: 300px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+  }
+  
+  .buttons a:hover {
+    transform: scale(1.2);
+  }
+
+
+  .list li{
+    list-style-position: outside;
+    margin-left: 40px;
+  }
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 3em;
+    }
+
+    #acerca-de .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #acerca-de .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #acerca-de h2{
+        margin-top: 0px;
+    }
+
+    #acerca-de .img-container{
+        background-image: url(../media/5970ca074a5fce8feb9c0178d90319c9.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 300px; 
+    }
+
+    #nuestros-trabajos .trabajos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-trabajos p{
+        display: block;
+        margin-bottom: 70px;
+        margin-top: 150px;
+    }
+
+    #nuestros-trabajos h2{
+        font-size: 3em;
+    }
+
+    #nuestros-trabajos h3{
+        margin-top: 0;
+    }
+
+    #nuestros-trabajos .carta{
+        padding: 50px ;
+        background-size: 100% 170px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(41, 41, 41);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../media/11781.jpg);
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../media/Mantenimiento-de-sistema-de-aire-acondicionado.jpg);
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../media/2207.q803.003.S.m012.c10.broken\ air\ conditioner\ realistic.jpg);
+    }
+
+    #contacto h2{
+        font-size: 3em;
+        
+    }
+
+    
+
+    footer .container{
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+}
+
